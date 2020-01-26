@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Tes Ubah Content Menggunakan JavaScript</h1>
+
+<p>JavaScript dapat mengubah content elemen HTML:</p>
+
+<button type="button" onclick="myFunction()">Click !</button>
+
+<p id="tes">Klik tombol diatas maka kalimat ini akan berubah.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("tes").innerHTML = "Bertarunglah Dragonball dengan segala kemampuan yang ada!";
+  document.getElementById("tes").style.color = "White"
+  document.getElementById("tes").style.fontSize = "30px"
+  document.getElementById("tes").style.backgroundColor = "Blue"
+}
+</script>
+
+</body>
+</html>

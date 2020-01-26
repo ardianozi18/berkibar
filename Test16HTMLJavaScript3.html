@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Bella Mingkem.jpg"
+  } else {
+    pic = "Bella Mangap.jpg"
+  }
+  document.getElementById('gambarku').src = pic;
+}
+</script>
+
+<img id="gambarku" src="Bella Mingkem.jpg" width="500" height="600">
+
+<p>
+<button type="button" onclick="light(0)">Mingkem!</button>
+<button type="button" onclick="light(1)">Mangap!</button>
+</p>
+
+</body>
+</html>
