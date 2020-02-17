@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>Test 19 HTML Layout</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 body {
@@ -24,16 +24,16 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
+  float: right;
   width: 30%;
   height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
+  background: rgb(71, 71, 73);
   padding: 20px;
 }
 
 /* Style the list inside the menu */
 nav ul {
-  list-style-type: none;
+  list-style-type:circle;
   padding: 0;
 }
 
@@ -47,9 +47,9 @@ article {
 
 /* Clear floats after the columns */
 section:after {
-  content: "";
-  display: table;
-  clear: both;
+  content:"";
+  display:table;
+  clear:both;
 }
 
 /* Style the footer */
@@ -71,12 +71,12 @@ footer {
 </head>
 <body>
 
-<h2>CSS Layout Float</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<h2>Capital Cities</h2>
+<p>is the municipality exercising primary status in a country, state, province, or other administrative region, usually as its seat of government.</p>
+<p>A capital is typically a city that physically encompasses the government's offices and meeting places; the status as capital is often designated by its law or constitution.</p>
 
 <header>
-  <h2>Cities</h2>
+  <h2>Biggest Capital City in the World</h2>
 </header>
 
 <section>
@@ -90,13 +90,18 @@ footer {
   
   <article>
     <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom,
+      with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, 
+      its history going back to its founding by the Romans, who named it Londinium.</p>
   </article>
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p>The word capital derives from the Latin caput (genitive capitis), meaning ‘head’.
+  In several English-speaking states, the terms county town and county seat are also used in lower subdivisions.
+  In some unitary states, subnational capitals may be known as ’administrative centres’. 
+  The capital is often the largest city of its constituent, though not always.</p>
 </footer>
 
 </body>
