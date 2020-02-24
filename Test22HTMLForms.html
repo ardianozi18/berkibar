@@ -9,11 +9,24 @@
 <h2>HTML Forms</h2>
 
 <form action="/action_page.php" target="_blank" method="POST">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="Ardian Fauzi"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Tri Pamungkas"><br><br>
-  <input type="submit" value="Submit">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Ardian Fauzi"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Tri Pamungkas"><br><br>
+    <input type="submit" value="Submit"><br/><br/>
+  </fieldset>
+  <fieldset>
+    <legend>Address:</legend>
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" value="Tulungagung"><br>
+    <label for="street">Street:</label><br/>
+    <input type="text" id="street" name="street" value="East Sukowidodo"><br/>
+    <label for="number">Number:</label><br/>
+    <input type="text" id="number" name="number" value="RT 02 RW 01"><br/><br/>
+    <input type="submit" value="Submit">
+  </fieldset>
 </form> 
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
