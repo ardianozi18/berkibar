@@ -11,9 +11,13 @@
 
 <form action="/action_page.php">
   <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"/><br>
+  <input type="text" id="username" name="username"/><br/>
   <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd"/><br><br>
+  <input type="password" id="pwd" name="pwd"/><br/>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"/><br/>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"/><br/>
   <input type="submit" value="Submit"/>
 </form>
 
@@ -57,7 +61,7 @@
 
 <form action="/action_page.php">
   <label for="tanggallahir">Tanggal Lahir:</label>
-  <input type="date" id="tanggallahir" name="tanggallahir">
+  <input type="datetime-local" id="tanggallahir" name="tanggallahir" max="2015-01-01" min="1990-01-01">
   <input type="submit" value="Masukkan!">
 </form>
 
