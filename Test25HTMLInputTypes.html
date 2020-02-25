@@ -16,57 +16,26 @@
   <input type="password" id="pwd" name="pwd"/><br/>
   <label for="email">Email:</label><br>
   <input type="email" id="email" name="email"/><br/>
+  <label for="tanggallahir">Tanggal Lahir:</label><br/>
+  <input type="datetime-local" id="tanggallahir" name="tanggallahir" max="2015-01-01" min="1990-01-01"><br/>
   <label for="file">Choose File:</label><br>
-  <input type="file" id="file" name="file"/><br/><br/>
+  <input type="file" id="file" name="file"/><br/>
+  <label for="number">Foot size:</label><br>
+  <input type="number" id="number" name="number" min="30" max="50" step="1"/><br/>
+  <label for="phone">Enter a phone number:</label><br/>
+  <input type="tel" id="phone" name="phone" placeholder="123-4567-8920" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required><br/>
+  <small>Format: +62-xxx-xxxx-xxxx</small><br/><br/>
+  <label for="appt">Select a time you start going to sleep:</label>
+  <input type="time" id="appt" name="appt"><br/><br/>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage"><br/><br/>
+  <label for="favcolor">Select your favorite color:</label><br/>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br/><br/>
   <input type="submit" value="Submit"/>
+  
 </form>
 
-<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+<p>Please fill all field required</p>
 
 </body>
 </html>
-
-<br/><br/><br/><br/><br/><br/>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Show a Color Picker</h2>
-
-<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
-
-<form action="/action_page.php">
-  <label for="favcolor">Select your favorite color:</label>
-  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-  <input type="submit" value="Submit">
-</form>
-
-<p><b>Note:</b> type="color" is not supported in Internet Explorer 11 or Safari 9.1 (or earlier).</p>
-
-</body>
-</html>
-
-
-<br/><br/><br/><br/><br/><br/>
-
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Date Field</h2>
-
-<p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
-
-<form action="/action_page.php">
-  <label for="tanggallahir">Tanggal Lahir:</label>
-  <input type="datetime-local" id="tanggallahir" name="tanggallahir" max="2015-01-01" min="1990-01-01">
-  <input type="submit" value="Masukkan!">
-</form>
-
-<p><strong>Note:</strong> type="date" is not supported in Safari or Internet Explorer 11 (or earlier).</p>
-
-</body>
-</html>
-
