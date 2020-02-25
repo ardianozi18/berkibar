@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test 43 HTML Form Element Datalist</title>
+    </head>
+<body>
+
+<h2>Daftar Maskapai Penerbangan di Indonesia</h2>
+
+<p>Berikut merupakan informasi mengenai beberapa maskapai penerbangan yang beroperasi di Indonesia</p>
+
+<form action="/action_page.php">
+  <input list="airlines" name="airlines"/>
+  <datalist id="airlines">
+    <option value="Garuda Indonesia"/>
+    <option value="Citilink"/>
+    <option value="Sriwijaya Air"/>
+    <option value="Lion Air"/>
+    <option value="Batik Air"/>
+    <option value="NAM Air"/>
+  </datalist>
+  <input type="submit" value="Check!"/>
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+</body>
+</html>
