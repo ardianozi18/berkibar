@@ -3,7 +3,7 @@
     <head>
         <title>Test 25 HTML Input Types</title>
     </head>
-<body>
+<body style="background-color: rgb(31, 13, 230);">
 
 <h2>Password field</h2>
 
@@ -11,15 +11,15 @@
 
 <form action="/action_page.php">
   <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"/><br/>
+  <input type="text" id="username" name="username" required autocomplete="on"/><br/>
   <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd" maxlength="6"/><br/>
+  <input type="password" id="pwd" name="pwd" maxlength="6" autofocus autocomplete="off"/><br/>
   <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"/><br/>
+  <input type="email" id="email" name="email" required autocomplete="off"/><br/>
   <label for="tanggallahir">Tanggal Lahir:</label><br/>
   <input type="datetime-local" id="tanggallahir" name="tanggallahir" max="2015-01-01" min="1990-01-01"><br/>
   <label for="file">Choose File:</label><br>
-  <input type="file" id="file" name="file"/><br/>
+  <input type="file" id="file" name="file" multiple/><br/>
   <label for="number">Foot size:</label><br>
   <input type="number" id="number" name="number" min="30" max="50" step="1"/><br/>
   <label for="phone">Enter a phone number:</label><br/>
@@ -31,7 +31,7 @@
   <input type="url" id="homepage" name="homepage" size="50"><br/><br/>
   <label for="favcolor">Select your favorite color:</label><br/>
   <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br/><br/>
-  <input type="submit" value="Submit"/>
+  <input type="submit" value="Submit">
   
 </form>
 
