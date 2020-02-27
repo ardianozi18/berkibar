@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image to use:</p>
+<img id="bella" src="Bella Mangap.jpg" alt="Bella Mangap" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="BellaCanvas" width="250" height="300"
+style="border:2px solid #130101;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p><button onclick="BellaGambar()">Gambar Bella</button></p>
+
+<script>
+function BellaGambar() {
+  var c = document.getElementById("BellaCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("bella");
+  ctx.drawImage(img,10,10);
+}
+</script>
+
+</body>
+</html>
