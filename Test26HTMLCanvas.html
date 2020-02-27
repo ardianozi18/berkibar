@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="TestCanvas" width="1000" height="600" style="border: 10px solid black;">
+    Cannot support Canvas tag</canvas>
+
+    <script>/*--Menggambar garis miring--*/
+        var c = document.getElementById("TestCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(1000,1400);
+        ctx.stroke();
+    </script>
+
+    <script>/*--Menggambar Lingkaran--*/
+        var c = document.getElementById("TestCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(578,335,243,0,2 * Math.PI);
+        ctx.stroke();
+    </script>
+
+    <script>/*--Menulis--*/
+        var c = document.getElementById("TestCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "50px Calibri";
+        ctx.strokeText("Halo Dunia!",600,90);
+    </script>
+
+    <script>/*--Menciptakan Gradient--*/
+        var c = document.getElementById("TestCanvas");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"blue");
+        grd.addColorStop(1,"yellow");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(100,100,100,100);
+    </script>
+
+
+</body>
+</html>
