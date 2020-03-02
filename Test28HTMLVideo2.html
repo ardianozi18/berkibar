@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style=";text-align: left;"> 
+  <button onclick="mainkan()">Mainkan!</button> 
+  <button onclick="perbesar()">Layar Besar</button>
+  <button onclick="perkecil()">Layar Kecil</button>
+  <button onclick="Normal()">Layar Normal</button>
+  <br><br>
+  <video id="bumidatar" width="500">
+    <source src="Flat Earth 01- BANGKITNYA KESADARAN.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("bumidatar"); 
+
+function mainkan() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function perbesar() { 
+    myVideo.width = 560; 
+} 
+
+function perkecil() { 
+    myVideo.width = 320; 
+} 
+
+function Normal() { 
+    myVideo.width = 500; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.bumidatarid.org/" target="_blank">Bumi Datar Indonesia</a>.</p>
+
+</body> 
+</html>
