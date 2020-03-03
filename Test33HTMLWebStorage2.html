@@ -4,7 +4,7 @@
   <title>Test 33 HTML Web Storage 2</title>
 <script>
 function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
+  if (typeof(Storage) !=="undefined") {
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
     } else {
