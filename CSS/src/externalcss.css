@@ -1,0 +1,27 @@
+body {
+	background: url("Bella Mangap.jpg") no-repeat right top;
+    background-size: 450px;
+}
+
+h1 {
+    border-style: solid;
+    padding: 1cm;
+    border-width: 2px 4px;
+    border-color: blue red;
+    border-radius: 10px;  
+    margin: 50px;
+    width: 250px;
+    text-align: left;
+    outline-style: dotted;
+    outline-offset: 10px;
+}
+
+p {
+    color: rgb((34, 65, 4)2, 58);
+}
+
+div {
+    background-color: powderblue;
+    margin: 50px;
+    width: 250px;
+    }
