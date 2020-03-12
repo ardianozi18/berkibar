@@ -2,15 +2,22 @@
 <html>
 <body>
 
-<h2>My First JavaScript</h2>
+<h2>JavaScript Array.reduce()</h2>
 
-<button type="button"
-onclick="TestJS()">
-Click me to display Date and Time.</button>
+<p>This example finds the sum of all numbers in an array:</p>
 
-<p id="demo">Klik tombol untuk melihat waktu.</p>
+<p id="demo"></p>
 
-<script src="src/jstest.js"></script>
+<script>
+var numbers = [49, 4, 9, 16, 25];
+var sum = numbers.reduce(myFunction);
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value ;
+}
+</script>
 
 </body>
-</html> 
+</html>
