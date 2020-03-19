@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("name").value;
+            document.getElementById("demosatu").innerHTML = 
+            `<p id="demo1">Place of birth:<br/>
+            <input id="demo1" />
+            <button>Fill</button>
+        </p>`;
+        }
+    </script>
+    </head>
 <body>
 
 <h1>Biodata Test</h1>
@@ -11,23 +23,9 @@
 <button onclick="myFunction()">Fill</button>
 </p>
 
-<p id="demo1">Place of birth:<br/>
-    <input id="demo1" />
-    <button>Fill</button>
-</p>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("name").value;
-    document.getElementById("demo1").innerHTML = x;
-}
-</script>
+<div id="demosatu"></div>
 
 
-
-
-<script>
-</script>
 
 </body>
 </html> 
