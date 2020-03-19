@@ -2,16 +2,31 @@
 <html>
 <body>
 
-<h2>My First Web Page</h2>
+<h1>Biodata Test</h1>
 
-<p id="demo"></p>
+<h2>Fill the biodata below:</h2>
+
+<p>Name:<br/>
+<input id="name"/>
+<button onclick="myFunction()">Fill</button>
+</p>
+
+<p id="demo1">Place of birth:<br/>
+    <input id="demo1" />
+    <button>Fill</button>
+</p>
 
 <script>
-a = 5;
-b = 6;
-c = a + b;
+function myFunction() {
+    var x = document.getElementById("name").value;
+    document.getElementById("demo1").innerHTML = x;
+}
+</script>
 
-document.getElementById("demo").innerHTML = c;
+
+
+
+<script>
 </script>
 
 </body>
