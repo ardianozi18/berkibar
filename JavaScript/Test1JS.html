@@ -3,11 +3,24 @@
     <head>
     <script>
         function myFunction() {
-            var x = document.getElementById("name").value;
             document.getElementById("demosatu").innerHTML = 
             `<p id="demo1">Place of birth:<br/>
             <input id="demo1" />
-            <button>Fill</button>
+            <button onclick="myFunction2()">Fill</button>
+        </p>`;
+        }
+        function myFunction2() {
+            document.getElementById("demodua").innerHTML = 
+            `<p id="demo2">Date of birth:<br/>
+            <input id="demo2" />
+            <button onclick="myFunction3()">Fill</button>
+        </p>`;
+        }
+        function myFunction3() {
+            document.getElementById("demotiga").innerHTML = 
+            `<p id="demo3">Kewarganegaraan:<br/>
+            <input id="demo3" />
+            <button onclick="myFunction3()">Fill</button>
         </p>`;
         }
     </script>
@@ -24,6 +37,8 @@
 </p>
 
 <div id="demosatu"></div>
+<div id="demodua"></div>
+<div id="demotiga"></div>
 
 
 
