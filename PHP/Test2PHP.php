@@ -7,13 +7,16 @@
 <?php
 $testkalimat = "Halo Dunia!";
 $testangka = 12;
-$testlain = 3.5;
+$testlain = "Bella Praviyanti";
+$testLain = 999;
 
 echo $testkalimat;
 echo "<br>";
 echo $testangka;
 echo "<br>";
-echo $testlain;
+echo "I love $testlain forever";
+echo "<br>";
+echo "I love the number of " . $testLain . " and 99";
 ?> 
 
 </body>
