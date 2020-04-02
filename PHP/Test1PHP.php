@@ -5,7 +5,7 @@
 <h1>Percobaan PHP</h1>
 
 <?php
-echo "Tes PHP!";
+echo "test PHP!"
 ?> 
 
 </body>
