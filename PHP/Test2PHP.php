@@ -17,6 +17,8 @@ echo "<br>";
 echo "I love $testlain forever";
 echo "<br>";
 echo "I love the number of " . $testLain . " and 99";
+print "<br>";
+var_dump($testangka);
 ?> 
 
 </body>
