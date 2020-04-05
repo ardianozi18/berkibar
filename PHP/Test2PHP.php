@@ -19,6 +19,9 @@ echo "<br>";
 echo "I love the number of " . $testLain . " and 99";
 print "<br>";
 var_dump($testangka);
+print "<br>";
+print str_replace("Dunia", "Ciledug", $testkalimat);
+
 ?> 
 
 </body>
