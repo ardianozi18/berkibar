@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>  
 <html>
 <head>
+    <title>Test Form Input with PHP</title>
 </head>
 <body>  
 
